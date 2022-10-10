@@ -11,7 +11,6 @@ const QuizData = ({ quizs }) => {
       <div className="card-body text-left">
         <h2 className="card-title">{name}</h2>
         <h3>Total Quiz : {total}</h3>
-        {/* <button className="btn btn-primary">Let's practice</button> */}
         <Link to={`topics/${id}`}>
         <button className="learn-more">
           <span className="circle bg-violet-500" aria-hidden="true">
