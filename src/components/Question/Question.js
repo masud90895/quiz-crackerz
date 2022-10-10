@@ -42,9 +42,9 @@ const Question = ({ questionData,index }) => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 mb-3 px-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 mb-3 px-2">
         {options.map((option) => (
-          <Option key={option} option={option}></Option>
+          <Option key={option} option={option} correctAnswer={correctAnswer}></Option>
         ))}
       </div>
     </div>
