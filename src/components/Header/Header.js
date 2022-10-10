@@ -36,7 +36,7 @@ const Header = () => {
               title="Statistics"
               className={({ isActive }) =>
               isActive
-                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-blue-700"
+                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
                 : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
             }
             >
@@ -50,7 +50,7 @@ const Header = () => {
               title="Blog"
               className={({ isActive }) =>
               isActive
-                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-blue-700"
+                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
                 : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
             }
             >

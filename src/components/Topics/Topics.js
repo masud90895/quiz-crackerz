@@ -28,7 +28,7 @@ const Topics = () => {
               <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                 <Link
                   rel="noopener noreferrer"
-                  to="/topics"
+                  to="/"
                   className="px-8 py-2  text-lg font-semibold rounded bg-violet-500 text-gray-100 hover:bg-violet-600 hover:text-white transition-all"
                 >
                   Topics

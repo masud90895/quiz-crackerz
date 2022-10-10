@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Swal from 'sweetalert2'
 import Option from "../Option/Option";
 
-const Question = ({ questionData,index }) => {
+const Question = ({ questionData,index,setRight,setwrong,right,wrong }) => {
   const { correctAnswer, id, options, question } = questionData;
   const showAnswer=()=>{
     Swal.fire(`Ans:  ${correctAnswer}`)
@@ -44,7 +44,8 @@ const Question = ({ questionData,index }) => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mb-3 px-2">
         {options.map((option) => (
-          <Option key={option} option={option} correctAnswer={correctAnswer}></Option>
+          <Option key={option} option={option} correctAnswer={correctAnswer} setwrong={setwrong} setRight={setRight} wrong={wrong}
+          right={right}></Option>
         ))}
       </div>
     </div>

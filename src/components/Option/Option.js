@@ -1,7 +1,7 @@
 import React from 'react';
 import Swal from 'sweetalert2'
 
-const Option = ({option,correctAnswer}) => {
+const Option = ({option,correctAnswer,setRight,setwrong,right,wrong}) => {
     const showIsCorrect=(option)=>{
         if(correctAnswer===option){
             Swal.fire({
@@ -11,7 +11,9 @@ const Option = ({option,correctAnswer}) => {
                 showConfirmButton: false,
                 timer: 1500
               })
+              setRight(right + 1)
         }else{
+            setwrong(wrong + 1)
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
