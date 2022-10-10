@@ -13,8 +13,8 @@ const Header = () => {
           title="Mega Quiz"
           className="inline-flex items-center"
         >
-          <img className="flex-shrink-0 w-8 h-8 rounded-full text-gray-900" src={image} alt="" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+          <img className="flex-shrink-0 w-16 h-16 rounded-full text-gray-900" src={image} alt="" />
+          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase animate-charcter">
             Mega Quiz
           </span>
         </Link>
