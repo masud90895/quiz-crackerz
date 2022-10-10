@@ -15,7 +15,7 @@ const Question = ({ questionData,index }) => {
         <div className="flex justify-between">
           <h3 className="text-xl">
             {" "}
-            <span className="font-bold">Quiz-{index}</span> <span>{question}</span>
+            <span className="font-bold">Quiz-{index + 1}</span> <span>{question}</span>
           </h3>
           <button
           onClick={showAnswer}

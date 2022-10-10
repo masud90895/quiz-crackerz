@@ -6,7 +6,7 @@ const QuizData = ({ quizs }) => {
   return (
     <div className="card w-full bg-base-100 shadow-xl">
       <figure className="shadow p-2 rounded-md">
-        <img src={logo} alt="Shoes" />
+        <img style={{'backgroundColor': 'gainsboro' }} src={logo} alt="Shoes" />
       </figure>
       <div className="card-body text-left">
         <h2 className="card-title">{name}</h2>

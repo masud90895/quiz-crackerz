@@ -35,7 +35,7 @@ const Topics = () => {
                 </Link>
                 <Link
                   rel="noopener noreferrer"
-                  to="#"
+                  to="blog"
                   className="px-8 py-2 text-lg font-semibold  rounded "
                 >
                   <button className="learn-more">

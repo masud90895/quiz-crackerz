@@ -15,7 +15,7 @@ const Statistics = () => {
   
   return (
       <LineChart
-      className="mx-auto mt-10"
+      className="mx-auto  mt-10"
         width={600}
         height={300}
         data={datas}
