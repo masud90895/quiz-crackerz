@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Blog from "./components/Blog/Blog";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import QuizContainer from "./components/QuizContainer/QuizContainer";
 import Topics from "./components/Topics/Topics";
@@ -25,6 +26,10 @@ function App() {
           },
           element: <QuizContainer></QuizContainer>,
         },
+        {
+          path: "blog",
+          element:<Blog/>
+        }
       ],
     },
   ]);

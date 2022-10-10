@@ -24,11 +24,7 @@ const Header = () => {
               to="/"
               aria-label="Topics"
               title="Topics"
-              className={({ isActive }) =>
-                isActive
-                  ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-blue-700"
-                  : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
-              }
+              className="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
             >
               Topics
             </NavLink>
@@ -124,7 +120,7 @@ const Header = () => {
                   <ul className="space-y-4">
                   <li>
                       <Link
-                        to="/topics"
+                        to="/"
                         aria-label="Topics"
                         title="Topics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

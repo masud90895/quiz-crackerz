@@ -21,7 +21,7 @@ const Option = ({option,correctAnswer}) => {
         }
     }
     return (
-        <div className='md:w-2/3 w-full h-22 mb-2 border border-gray-600 rounded-lg text-xl pt-2'
+        <div className='md:w-2/3 w-full h-22 mb-2 border border-violet-500 rounded-lg text-xl pt-2'
        
         >
             <input  onClick={()=>showIsCorrect(option)} type="radio" id={option} name="fav_language" value={option}/>
