@@ -11,20 +11,6 @@ const Topics = () => {
   const quizData = useContext(QuizContext);
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      {/* <div className="">
-        <div className="row">
-          <div className="col-md-12 text-left flex items-center">
-            <img className="w-20" src={image} alt="" />
-            <h3 className="animate-charcter"> Mege Quiz</h3>
-          </div>
-          <div className="text-left mt-3 ">
-            <p>Enjoy Mega quiz gaming!
-                <br />
-                 Guess all the game quiz levels with over 720 video games that has been a trending until this year (2023).</p>
-          </div>
-        </div>
-      </div> */}
-
       <div>
         <section className="dark:bg-gray-800 dark:text-gray-100">
           <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
@@ -49,14 +35,14 @@ const Topics = () => {
                 </Link>
                 <Link
                   rel="noopener noreferrer"
-                  to="/about"
+                  to="#"
                   className="px-8 py-2 text-lg font-semibold  rounded "
                 >
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                  <button className="learn-more">
+                    <span className="circle bg-violet-500" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Learn More</span>
+                    <span className="button-text">Learn More</span>
                   </button>
                 </Link>
               </div>

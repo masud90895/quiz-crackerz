@@ -21,7 +21,7 @@ const Header = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <NavLink
-              to="/topics"
+              to="/"
               aria-label="Topics"
               title="Topics"
               className={({ isActive }) =>
