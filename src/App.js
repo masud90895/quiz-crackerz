@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import Header from './components/Header/Header';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     {
       path: '/',
       element: <Header></Header>,
+      errorElement: <ErrorPage></ErrorPage>
     }
   ])
   return (
