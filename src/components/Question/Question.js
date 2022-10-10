@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+import Swal from 'sweetalert2'
 import Option from "../Option/Option";
 
-const Question = ({ questionData }) => {
+const Question = ({ questionData,index }) => {
   const { correctAnswer, id, options, question } = questionData;
+  const showAnswer=()=>{
+    Swal.fire(`Ans:  ${correctAnswer}`)
+  }
+  
 
   return (
     <div className="card w-full bg-base-100 shadow-xl mb-4 p-3">
@@ -10,9 +15,11 @@ const Question = ({ questionData }) => {
         <div className="flex justify-between">
           <h3 className="text-xl">
             {" "}
-            Quiz-1 <span>{question}</span>
+            Quiz-{index} <span>{question}</span>
           </h3>
-          <button>
+          <button
+          onClick={showAnswer}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

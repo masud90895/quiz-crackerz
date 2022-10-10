@@ -11,7 +11,7 @@ const QuizContainer = () => {
             </div>
             <div>
             {
-              quizsData.data.questions.map(questionData => <Question key={questionData.id} questionData={questionData}></Question>)
+              quizsData.data.questions.map((questionData,index) => <Question key={questionData.id} questionData={questionData} index={index}></Question>)
             }
             </div>
             
