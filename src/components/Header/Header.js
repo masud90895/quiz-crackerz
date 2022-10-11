@@ -60,6 +60,23 @@ const Header = () => {
               </div>
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/contact"
+              aria-label="Contact"
+              title="Contact"
+              className={({ isActive }) =>
+              isActive
+                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
+                : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
+            }
+            >
+              <div className="relative py-3">
+              <p> Contact</p>
+              <p className="absolute bottom-5 left-9"></p>
+              </div>
+            </NavLink>
+          </li>
         </ul>
         <div className="lg:hidden">
           <button
@@ -146,6 +163,16 @@ const Header = () => {
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         <p> Blog</p>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/contact"
+                        aria-label="Contact"
+                        title="Contact"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        <p> Contact</p>
                       </Link>
                     </li>
                   </ul>

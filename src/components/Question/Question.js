@@ -10,7 +10,7 @@ const Question = ({ questionData,index,setRight,setwrong,right,wrong }) => {
   
 
   return (
-    <div className="card w-full bg-base-100 shadow-xl mb-4 p-3">
+    <div style={{'border': '2px solid #8B5CF6'}} className="card w-full bg-base-100 shadow-xl mb-4 p-3 ">
       <div className="mb-4">
         <div className="flex justify-between">
           <h3 className="text-xl">
