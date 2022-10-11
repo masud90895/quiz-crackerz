@@ -22,6 +22,10 @@ function App() {
           element: <Topics></Topics>,
         },
         {
+          path: "home",
+          element: <Topics></Topics>,
+        },
+        {
           path: "topics/:id",
           loader: ({params}) => {
            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`);

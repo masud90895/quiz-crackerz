@@ -21,12 +21,16 @@ const Header = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <NavLink
-              to="/"
-              aria-label="Topics"
-              title="Topics"
-              className="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
+              to="home"
+              aria-label="Home"
+              title="Home"
+              className={({ isActive }) =>
+              isActive
+                ? "font-medium border-b-2 border-violet-500 tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
+                : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
+            }
             >
-              Topics
+              Home
             </NavLink>
           </li>
           <li>
@@ -36,7 +40,7 @@ const Header = () => {
               title="Statistics"
               className={({ isActive }) =>
               isActive
-                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
+                ? "font-medium  border-b-2 border-violet-500  tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
                 : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
             }
             >
@@ -50,7 +54,7 @@ const Header = () => {
               title="Blog"
               className={({ isActive }) =>
               isActive
-                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
+                ? "font-medium  border-b-2 border-violet-500  tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
                 : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
             }
             >
@@ -67,7 +71,7 @@ const Header = () => {
               title="Contact"
               className={({ isActive }) =>
               isActive
-                ? "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
+                ? "font-medium border-b-2 border-violet-500  tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-violet-500"
                 : "font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 text-gray-700"
             }
             >
@@ -138,11 +142,11 @@ const Header = () => {
                   <li>
                       <Link
                         to="/"
-                        aria-label="Topics"
-                        title="Topics"
+                        aria-label="Home"
+                        title="Home"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Topics
+                        Home
                       </Link>
                     </li>
                     <li>
