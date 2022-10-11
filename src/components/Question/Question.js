@@ -3,10 +3,9 @@ import Swal from 'sweetalert2'
 import Option from "../Option/Option";
 
 const Question = ({ questionData,index,setRight,setwrong,right,wrong }) => {
-  const { correctAnswer, id, options, question } = questionData;
+  const { correctAnswer, options, question } = questionData;
   const showAnswer=()=>{
-    if(correctAnswer === '<style></style>'){
-     
+    if(correctAnswer === '<style></style>'){     
       Swal.fire('Ans: <,style> <,/style>')
       return
     }
@@ -20,7 +19,7 @@ const Question = ({ questionData,index,setRight,setwrong,right,wrong }) => {
         <div className="flex justify-between">
           <h3 className="text-xl">
             {" "}
-            <span className="font-bold">Quiz-{index + 1}</span> <span>{question}</span>
+            <span className="font-bold">Quiz-{index + 1}</span> <span>{question.replace('<p>','').replace('</p>','')}</span>
           </h3>
           <button
           title="show answer"
