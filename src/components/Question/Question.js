@@ -5,6 +5,11 @@ import Option from "../Option/Option";
 const Question = ({ questionData,index,setRight,setwrong,right,wrong }) => {
   const { correctAnswer, id, options, question } = questionData;
   const showAnswer=()=>{
+    if(correctAnswer === '<style></style>'){
+     
+      Swal.fire('Ans: <,style> <,/style>')
+      return
+    }
     Swal.fire(`Ans:  ${correctAnswer}`)
   }
   
@@ -18,6 +23,8 @@ const Question = ({ questionData,index,setRight,setwrong,right,wrong }) => {
             <span className="font-bold">Quiz-{index + 1}</span> <span>{question}</span>
           </h3>
           <button
+          title="show answer"
+          className="hover:text-black hover:bg-violet-500 hover:rounded-2xl"
           onClick={showAnswer}
           >
             <svg

@@ -18,7 +18,7 @@ const Topics = () => {
               <Lottie animationData={quiz} loop={true} />
             </div>
             <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left mt-8 lg:mt-0">
-              <h1 className="animate-charcter"> Mege Quiz</h1>
+              <h1 className="animate-charcter"> Mega Quiz</h1>
               <p className="mt-6 mb-8 text-lg sm:mb-12">
                 Enjoy Mega quiz gaming!
                 <br className="hidden md:inline lg:hidden" />
@@ -29,7 +29,7 @@ const Topics = () => {
                 <Link
                   rel="noopener noreferrer"
                   to="/"
-                  className="px-8 py-2  text-lg font-semibold rounded bg-violet-500 text-gray-100 hover:bg-violet-600 hover:text-white transition-all"
+                  className="px-8 py-2  text-lg font-semibold rounded bg-violet-500 text-gray-100 hover:bg-white hover:border-[1px] hover:border-violet-500 hover:text-violet-500 transition-all"
                 >
                   Topics
                 </Link>
