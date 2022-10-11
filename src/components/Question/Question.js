@@ -19,7 +19,7 @@ const Question = ({ questionData,index,setRight,setwrong,right,wrong }) => {
         <div className="flex justify-between">
           <h3 className="text-xl">
             {" "}
-            <span className="font-bold">Quiz-{index + 1}</span> <span>{question.replace('<p>','').replace('</p>','')}</span>
+            <span className="font-bold">Quiz-{index + 1}</span> <span>{question.split('<p>').join(' ').split('</p>').join(' ')}</span>
           </h3>
           <button
           title="show answer"
